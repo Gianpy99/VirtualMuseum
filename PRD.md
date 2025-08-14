@@ -57,6 +57,18 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 - Version-controlled using GitHub
 - Deployment options: GitHub Pages, Netlify, or Vercel
 
+### **4.7 Image Protection**
+- Disable right-click and image dragging
+- Overlay transparent layer on images to prevent direct downloads
+- Optional watermarks for sensitive or premium images
+- Note: Screenshots cannot be fully prevented; focus on making casual copying difficult
+
+### **4.8 Micro-Donations / Tips**
+- Provide a tip/donation button at the end of each gallery or virtual tour
+- Support multiple payment methods: Stripe, Revolut, selected cryptocurrencies
+- Optional: Display small suggestions or “support the museum” messages during navigation
+- Ensure donation flow is seamless and non-intrusive
+
 ---
 
 ## **5. Technical Requirements**
