@@ -1,7 +1,7 @@
 # Virtual Museum Website — PRD
 
 ## **1. Purpose**
-The Virtual Museum project is a personal website showcasing photography (macro, travel, competitive) and future LEGO-themed photos. The website should provide an immersive, gallery-like experience while being easy to maintain, visually appealing, and capable of integrating Google AdSense for monetization.
+The Virtual Museum project is a personal website showcasing photography (macro, travel, competitive) and future LEGO-themed photos. The website should provide an immersive, gallery-like experience while being easy to maintain, visually appealing, and capable of integrating Google AdSense and micro-donations for monetization.
 
 ---
 
@@ -12,6 +12,7 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 - Provide a responsive, intuitive experience across desktop, tablet, and mobile.
 - Integrate Google AdSense with minimal disruption to the user experience.
 - Enable version-controlled development and deployment via GitHub.
+- Support Raspberry Pi hosting for local or small-scale deployment.
 
 ---
 
@@ -36,38 +37,33 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 - Filtering by category or tag (e.g., Macro, Travel, LEGO)
 - Optional timeline view
 
-### **4.3 Interactive Features (Optional Phase 2)**
-- 3D gallery rooms using Three.js or A-Frame
-- Panoramic virtual rooms with clickable images
-- Info panels on hover
-
-### **4.4 Artist / Curator Profile**
-- “About the Photographer” section
-- Contact info and social links
-- Optional blog or updates section
-
-### **4.5 Monetization & Marketing**
-- Google AdSense integration (auto ads)
-- Print/download store (future feature)
-- Social sharing buttons
-
-### **4.6 Backend / Management**
-- Image management via folder structure or CMS (Markdown-based for GitHub)
-- Metadata (title, description, category) stored in JSON or YAML
-- Version-controlled using GitHub
-- Deployment options: GitHub Pages, Netlify, or Vercel
-
-### **4.7 Image Protection**
+### **4.3 Image Protection**
 - Disable right-click and image dragging
 - Overlay transparent layer on images to prevent direct downloads
 - Optional watermarks for sensitive or premium images
 - Note: Screenshots cannot be fully prevented; focus on making casual copying difficult
 
-### **4.8 Micro-Donations / Tips**
+### **4.4 Micro-Donations / Tips**
 - Provide a tip/donation button at the end of each gallery or virtual tour
 - Support multiple payment methods: Stripe, Revolut, selected cryptocurrencies
 - Optional: Display small suggestions or “support the museum” messages during navigation
 - Ensure donation flow is seamless and non-intrusive
+
+### **4.5 Artist / Curator Profile**
+- “About the Photographer” section
+- Contact info and social links
+- Optional blog or updates section
+
+### **4.6 Monetization & Marketing**
+- Google AdSense integration (auto ads)
+- Print/download store (future feature)
+- Social sharing buttons
+
+### **4.7 Backend / Management**
+- Image management via folder structure or CMS (Markdown-based for GitHub)
+- Metadata (title, description, category) stored in JSON or YAML
+- Version-controlled using GitHub
+- Deployment options: Raspberry Pi, GitHub Pages, Netlify, or Vercel
 
 ---
 
@@ -75,7 +71,7 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 - **Frontend:** HTML, CSS, JavaScript (optional frameworks: React, Next.js, or plain static site)
 - **Backend:** Static site (no server required initially)
 - **Data Storage:** JSON/YAML for image metadata
-- **Hosting / Deployment:** GitHub Pages or similar CI/CD pipeline
+- **Hosting / Deployment:** Raspberry Pi (Nginx or Apache), GitHub Pages, Netlify, or Vercel
 - **Analytics / Ads:** Google Analytics + AdSense integration
 - **Responsiveness:** Mobile-first design
 
@@ -93,9 +89,9 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 | Phase | Description | Timeline |
 |-------|------------|---------|
 | Phase 1 | Setup GitHub repo, static site, initial galleries | 1–2 weeks |
-| Phase 2 | Add Lightbox, filters, and metadata | 2–3 weeks |
-| Phase 3 | Integrate Google AdSense, basic analytics | 1 week |
-| Phase 4 | LEGO photography galleries, virtual rooms (optional) | Ongoing |
+| Phase 2 | Add Lightbox, filters, metadata, image protection | 2–3 weeks |
+| Phase 3 | Integrate Google AdSense, analytics, micro-donations/tips | 1–2 weeks |
+| Phase 4 | LEGO photography galleries, optional virtual rooms | Ongoing |
 
 ---
 
@@ -105,6 +101,7 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 - Engagement: time spent per gallery, clicks on images
 - Monetization: AdSense revenue once minimum traffic achieved
 - Ease of maintenance via GitHub workflow
+- Ability to run reliably on Raspberry Pi
 
 ---
 
@@ -114,6 +111,7 @@ The Virtual Museum project is a personal website showcasing photography (macro, 
 | Low traffic | Share galleries on social media, forums, and communities |
 | Slow LEGO content production | Start with small sets, mini-exhibits, gradually expand |
 | Website complexity | Start with static galleries, optional interactive features in later phases |
+| Pi hosting limitations | Limit number of concurrent visitors, optimize images for web |
 
 ---
 
